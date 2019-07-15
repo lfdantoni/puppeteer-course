@@ -1,0 +1,23 @@
+{
+  "name": "puppeteer-course",
+  "version": "1.0.0",
+  "description": "Puppeteer course practice",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lfdantoni/puppeteer-course.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lfdantoni/puppeteer-course/issues"
+  },
+  "homepage": "https://github.com/lfdantoni/puppeteer-course#readme",
+  "dependencies": {
+    "puppeteer": "^1.18.1"
+  }
+}
