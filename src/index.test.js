@@ -28,6 +28,19 @@ test('we can launch a browser', async () => {
   expect(text).toEqual('A gateway to the world')
 })
 
+test('search something', async () => {
+  await page.click('#queryinput');
+
+  await page.keyboard.type('hello');
+
+  await page.click('#search_button');
+  
+  await page.waitForSelector('.dictLink');
+  const text = await page.$eval('.dictLink', el => el.innerHTML);
+
+  expect(text).toEqual('hello');
+})
+
 
 
 
