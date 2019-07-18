@@ -38,7 +38,10 @@ test('search something', async () => {
   await page.waitForSelector('.dictLink');
   const text = await page.$eval('.dictLink', el => el.innerHTML);
 
+  const url = await page.url();
+
   expect(text).toEqual('hello');
+  expect(url).toMatch(/linguee\.com\/english-spanish\/search/);
 })
 
 
